@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block body %}
+  <header>
+  <h1>Sign Up</h1>
+  </header>
+  {% if error %}
+    <p class="error"><strong>Error:</strong> {{ error }}
+  {% endif %}
+  <form action="" method=post>
+    <dl>
+      <dt>Set username:
+      <dd><input type = text name=username>
+      <dt>Set password:
+      <dd><input type=password name=password>
+    </dl>
+    <p><input type=submit value=Register>
+  </form>
+{% endblock %}
