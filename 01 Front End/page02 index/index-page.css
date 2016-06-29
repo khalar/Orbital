@@ -1,3 +1,92 @@
-table{
-	border: 1px;
+/*
+==================
+Background
+==================
+*/
+body{
+	background: rgba(137,220,250,0.5);
+	font-family: "Optima"
 }
+
+.top-banner {
+	background: orange;
+}
+
+
+
+/*
+==================
+Top Banner
+==================
+*/
+#main-logo{
+	display: inline-block;
+}
+
+.project-code{
+	display: inline-block;
+
+}
+
+#create-table-button{
+	font-family: "Optima";
+	border-style: solid;
+	border-width: 10px;
+	border-color: rgb(33,32,246);
+	border-radius: 5px;
+	display: inline;
+
+}
+
+
+/*
+==================
+Table
+==================
+*/
+table{
+	border-collapse: collapse;
+	border-radius: 15px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	width:100%;
+	background-color: #FFFFFF;
+}
+
+
+table, th, td{
+	border-style: solid;
+	border-width: 1px;	
+}
+
+/*
+=================
+Annotation
+=================
+*/
+.export-button{
+	text-align: center;
+	border-style: solid;
+	border-radius: 5px;
+	border-width: 1px;
+	border-color: grey;
+	display: inline-block;
+	background-color: #ffffff;
+}
+
+/*
+=================
+Footer
+=================
+*/
+.instruction{
+	font-style: italic;
+	font-color: grey;
+}
+
+
+
+
+
+
+
