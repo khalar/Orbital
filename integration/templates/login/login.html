@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+	<title>Login Page</title>
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='login.css')}}">
+</head>
+<body>
+  <!--
+  ===================  
+  Icons of NUSched 
+  ===================
+  -->
+
+  <svg id= "icon" width="50" height="50" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style type="text/css"><![CDATA[
+@font-face { font-family: ifont; src: url("//at.alicdn.com/t/font_1442373896_4754455.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1442373896_4754455.woff") format("woff"), url("//at.alicdn.com/t/font_1442373896_4754455.ttf") format("truetype"), url("//at.alicdn.com/t/font_1442373896_4754455.svg#ifont") format("svg"); }
+
+]]></style></defs><g class="transform-group"><g transform="scale(0.1953125, 0.1953125)"><path d="M289.149 744.992h452.223v-349.484h-452.223v349.484zM638.6 436.632h61.654v61.689h-61.654v-61.689zM638.6 539.407h61.654v61.654h-61.654v-61.654zM638.6 642.218h61.654v61.689h-61.654v-61.689zM535.825 436.632h61.617v61.689h-61.617v-61.689zM535.825 539.407h61.617v61.654h-61.617v-61.654zM535.825 642.218h61.617v61.689h-61.617v-61.689zM432.981 436.632h61.689v61.689h-61.689v-61.689zM432.981 539.407h61.689v61.654h-61.689v-61.654zM432.981 642.218h61.689v61.689h-61.689v-61.689zM330.205 436.632h61.689v61.689h-61.689v-61.689zM330.205 539.407h61.689v61.654h-61.689v-61.654zM330.205 642.218h61.689v61.689h-61.689v-61.689zM515.296 27.361c-266.375 0-482.258 215.883-482.258 482.153 0 266.306 215.883 482.188 482.258 482.188 266.237 0 482.188-215.883 482.188-482.188 0-266.237-215.954-482.153-482.188-482.153zM597.44 230.395c0-22.354 18.117-40.469 40.539-40.469 22.354 0 40.469 18.117 40.469 40.469v42.397c0 22.354-18.079 40.469-40.469 40.469-22.388 0-40.539-18.079-40.539-40.469v-42.397zM350.803 230.395c0-22.354 18.117-40.469 40.505-40.469 22.317 0 40.469 18.117 40.469 40.469v42.397c0 22.354-18.151 40.469-40.469 40.469-22.388 0-40.505-18.079-40.505-40.469v-42.397zM782.464 744.992c0 22.699-18.391 41.091-41.091 41.091h-452.223c-22.699 0-41.124-18.391-41.124-41.091v-452.257c0-22.734 18.427-41.124 41.124-41.124h41.091v20.564c0 34.029 27.623 61.654 61.689 61.654 34.029 0 61.654-27.591 61.654-61.654v-20.564h123.337v20.564c0 34.029 27.655 61.654 61.721 61.654 33.996 0 61.654-27.591 61.654-61.654v-20.564h41.091c22.699 0 41.091 18.391 41.091 41.124v452.257z" fill="#000000"></path></g></g></svg>
+  <!--
+  ===================  
+  Instruction 
+  ===================
+  -->
+
+  <p class="authentication-title">Sign in to NUSched</p>
+  <br>
+ <!--
+  ===================  
+  Login Form
+  ===================
+  -->  
+  <div class="center-box">
+  <form action="" method="post" class="sign-in-form">
+    {% if errormsg %}
+      {{errormsg}}
+    {% endif %}
+    <br>
+  	<input type="text" name="username" placeholder="Username or Email">
+    <br>
+    <br>
+  	<input type="password" name="password" placeholder="Your Password">
+    <br>
+    <input type="submit" name="submit" id="submit-button" value = "Login">
+
+  </form>
+  </div>
+  <!--
+  ===================  
+  Account Creation
+  ===================
+  -->
+  <div class="account-creation">
+    <p class="Create-account-callout">New to NUSched? 
+    <a href="https://ivle.nus.edu.sg/api/login/?apikey=RJ2t5qoOD6pfM4EWJex40&url=http://127.0.0.1:5000/receivetoken"> Sign in with IVLE </a>
+    </p>
+
+  </div>
+  <!--
+  ===================  
+  Legal Note and Support
+  ===================
+  -->
+  <footer>
+    <ul class="site-footer-links">
+      <li>
+      <a href="http://www.nusched.com/site/terms">Terms</a>
+      </li>
+      <li>
+      <a href="http://www.nusched.com/site/privacy">Privacy</a>
+      </li>
+      <li>
+      <a href="http://www.nusched.com/site/security">Security</a>
+      </li>
+      <li>
+      <a href="http://www.nusched.com/site/contact">Contact</a>
+      </li>
+    </ul>
+
+  </footer>
+
+
+</body>
+</html>

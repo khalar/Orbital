@@ -1,0 +1,114 @@
+/*
+====================
+Background
+====================
+*/
+body{
+	background-color: rgb(246,246,246);
+	font-family: "Optima" Helvetica;
+
+  
+}
+
+/*
+==================
+Top-Banner
+==================
+*/
+#icon{
+	margin: 0 auto;
+	display: block;
+
+}
+
+.authentication-title{
+	display: block;
+	font-size: 30px;
+	text-align: center;
+
+}
+/*
+==================
+Forms
+==================
+*/
+.center-box{
+	display: block;
+	text-align: center;
+}
+
+.sign-in-form{
+	display: inline-block;
+	margin: 20 auto;
+  
+	border: 2px solid lightgrey;
+	border-radius: 2px;
+	background-color: #fff;
+	width: 320px;
+
+}
+
+.account-creation{
+	border: 2px solid lightgrey;
+	border-radius: 5px;
+	display: block;
+	text-align: center;
+	width: 320px;
+	margin: 20px auto;
+}
+
+
+
+/*
+==================
+Footer
+==================
+*/
+
+footer{
+	display: block;	
+	margin: 40px auto;
+	text-align: center;
+}
+
+.site-footer-links{
+  display: block;
+	list-style: none;
+	color: #767676;
+	padding: 20px 320px;
+	word-spacing: 30px;
+
+
+}
+
+li{
+	display: inline-block;
+	color: #767676;
+}
+
+/*
+==================
+Links
+==================
+*/
+a{
+	text-decoration: none;
+	color: #767676;
+}
+
+/*
+==================
+buttons
+==================
+*/
+input{
+	padding: 5px 50px;	
+}
+
+#submit-button{
+	background-color: #555555;
+	border: none;
+	color: #fff;
+
+	margin: 20px auto;
+}
